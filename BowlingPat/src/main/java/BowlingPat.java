@@ -13,6 +13,7 @@ public class BowlingPat {
         int bowls = 0; // The number of bowls a game is on out of 21 indexing between the array
         int frame = 0; // Local frame that a game is on up to 10
 
+        // counts up through variables until frames or bowls limit is reached
         while(frame < 10) { // Ten is max amount of frames foreach frame until 10 is reached
             if(rolls[bowls] == 10){ // Strike if a single frame is equal to ten
                 score += 10 + rolls[bowls + 1] + rolls[bowls + 2];
